@@ -16,5 +16,3 @@ $(window).resize(function(){
 		$("#nav").removeAttr("style");
 	}
 });
-
-alert("hi");

@@ -65,31 +65,47 @@ header #logo-div h3.ivanBrand{
   color:#f3f5e8;
   text-align: center;
 
+
 }
 
 @media screen and (max-width: 768px) {
+  nav{
+    background:  #353135;
+  }
+  #nav-sidebar{
+      background: #353135;
+      padding: 0;
+      margin: 0;
+  }
   #menu {
     width:1.4em;
     padding:0;
     margin:0;
     background:#353135;
     font-size:1.35em;
-    text-align: center;
+
     float: right;
 
   }
   #nav.js{
+    float:right;
     display: none;
+    width:300px;
+    background: red;
+    margin:0;
+    padding:0;
 
   }
    ul {
-    width:100%;
+    padding:0;
+    margin:0;
+    width:300px;
     list-style:none;
 
   }
    li {
     width:100%;
-    border-right:none;
+    border-left:none;
   }
 }
 
@@ -331,6 +347,7 @@ ul.social-icons {
   padding-top: 60px;
   text-align: center;
   padding-bottom: 20px;
+    position:relative;
 }
 #imageGallery h1{
   color: grey;
