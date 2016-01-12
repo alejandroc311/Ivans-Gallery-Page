@@ -1,18 +1,11 @@
-//this is for dealing with the mobile menu responsiveness
-  $("#nav").addClass("js").before('<div id="menu">☰</div>');
+$(function(){
+		$('#menu').slicknav({
+      label: "",
 
 
-// this is for dealing with the toggle/untoggle of the menu
+    });
+	});
 
-$("#menu").click(function(){
-	$("#nav").toggle();
-});
-
-
-// this is for dealing with a bug
-
-$(window).resize(function(){
-	if(window.innerWidth > 768) {
-		$("#nav").removeAttr("style");
-	}
+$(document).ready(function(){
+  $(".slicknav_menu").prepend('<h3 class= "ivanBrand">Ivan Perez</h3>');
 });
