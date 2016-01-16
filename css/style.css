@@ -8,15 +8,47 @@ body {
   font-size: 22px;
   background-color: #d9ded3;
 
+
 }
+
+
+/*This is the wrapper for the lightbox*/
+#lightbox{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,.5);
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+#lightbox img{
+    box-shadow:0 0 25px #111;
+   -webkit-box-shadow:0 0 25px #111;
+   -moz-box-shadow:0 0 25px #111;
+   max-width:940px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto
+
+}
+
+
+
+
 /* This is the part that deals with the navigation at the top of the page*/
 
 header{
-  background: #353135;
+  background: #4c4c4c;
+
 
 }
 #nav-sidebar{
-    background: #353135;
+    background: ##4c4c4c;
     padding: 0;
     margin: 0;
 }
@@ -28,7 +60,7 @@ header{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #353135;
+  background: ##4c4c4c;
   padding-right: 50px;
 
 
@@ -47,11 +79,12 @@ header{
   text-align: center;
   text-decoration: none;
   padding: 10px 16px;
+  font-family: 'Great Vibes', cursive;
 }
 header #logo-div{
 
   margin:0;
-  padding: 0;
+  padding:0;
 }
 
 header #logo-div h3.ivanBrand{
@@ -59,46 +92,59 @@ header #logo-div h3.ivanBrand{
   float: left;
 }
  header #logo-div h3.ivanBrand{
+   font-size: 26px;
+
   margin:0;
-  padding: 10px 0px 10px 25px;
+  padding: 10px 10px 25px 25px;
   display:block;
   color:#f3f5e8;
   text-align: center;
 
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+
+    /*background: #353135;*/
+
 }
 
-@media screen and (max-width: 768px) {
-  #menu {
-    width:1.4em;
-    padding:0;
-    margin:0;
-    background:#353135;
-    font-size:1.35em;
-    text-align: center;
-    float: right;
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	 #menu {
+		display:none;
+	}
+
+	.slicknav_menu {
+
+		display:block;
+
+	}
+  .slicknav_menu li{
+    font-size: 22px;
 
   }
-  #nav.js{
-    display: none;
-
+  .slicknav_nav{
+    width: 200px;
   }
-   ul {
-    width:100%;
-    list-style:none;
 
+  h3.ivanBrand{
+    float:left;
+    padding:10px 0px 10px 5px;
+    margin: 0;
+    width:250px;
+    color:#f3f5e8;
+    font-size: 26px;
+    font-family: 'Great Vibes', cursive;
   }
-   li {
-    width:100%;
-    border-right:none;
+  header #logo-div h3.ivanBrand{
+    display:none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  #menu {
 
-    display: none;
-  }
-}
 
 
 
@@ -239,6 +285,7 @@ only screen and (max-device-width : 399px){
   text-decoration: none;
   text-align: center;
   color:grey;
+  font-family: 'Great Vibes', cursive;
 
 
 
@@ -328,12 +375,14 @@ ul.social-icons {
 
 
 #imageGalleryHeading{
+  font-family: 'Great Vibes', cursive;
   padding-top: 60px;
   text-align: center;
   padding-bottom: 20px;
 }
 #imageGallery h1{
   color: grey;
+  font-size: 56px;
 
 }
 
